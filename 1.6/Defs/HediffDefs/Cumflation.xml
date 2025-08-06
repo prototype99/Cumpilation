@@ -34,6 +34,8 @@ have the tag `canCumflate` -->
         <minSeverity>0.2</minSeverity>
         <statOffsets>
           <Vulnerability>0.1</Vulnerability>
+          <SexFrequency>-0.1</SexFrequency>
+          <SexAbility>0.1</SexAbility>
         </statOffsets>
         <capMods>
           <li>
@@ -47,6 +49,8 @@ have the tag `canCumflate` -->
         <minSeverity>0.4</minSeverity>
         <statOffsets>
           <Vulnerability>0.3</Vulnerability>
+          <SexFrequency>-0.3</SexFrequency>
+          <SexAbility>0.1</SexAbility>
         </statOffsets>
         <capMods>
           <li>
@@ -61,6 +65,8 @@ have the tag `canCumflate` -->
         <minSeverity>0.65</minSeverity>
         <statOffsets>
           <Vulnerability>0.5</Vulnerability>
+          <SexFrequency>-0.5</SexFrequency>
+          <SexAbility>-0.1</SexAbility>
         </statOffsets>
         <capMods>
           <li>
@@ -75,6 +81,8 @@ have the tag `canCumflate` -->
         <minSeverity>0.9</minSeverity>
         <statOffsets>
           <Vulnerability>0.7</Vulnerability>
+          <SexFrequency>-0.7</SexFrequency>
+          <SexAbility>-0.5</SexAbility>
         </statOffsets>
         <capMods>
           <li>
