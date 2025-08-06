@@ -6,8 +6,7 @@
         <li>RimJobWorld</li>
 		<li>HugsLib</li>
 	</dependencies>
-	<incompatibleWith> 
-		<li>RJW-LicentiaLabs</li>
+	<incompatibleWith>
 		<li>RJW Bucket</li>
 		<li>Gathered RJW</li>
 	</incompatibleWith>
