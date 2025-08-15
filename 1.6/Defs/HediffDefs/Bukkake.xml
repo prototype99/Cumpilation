@@ -25,7 +25,6 @@
 					<Vulnerability>0.2</Vulnerability>
 					<SocialImpact>-0.1</SocialImpact>
 					<SexFrequency>-0.1</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 				</statOffsets>
 			</li>
 			<li>
@@ -35,7 +34,6 @@
 					<Vulnerability>0.3</Vulnerability>
 					<SocialImpact>-0.3</SocialImpact>
 					<SexFrequency>-0.15</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 					<ComfyTemperatureMax>1</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -47,7 +45,6 @@
 					prefer victims not being completely drenched-->
 					<SocialImpact>-0.5</SocialImpact>
 					<SexFrequency>-0.2</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 					<ComfyTemperatureMax>3</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -76,7 +73,6 @@
 					<Vulnerability>-0.1</Vulnerability>
 					<SocialImpact>-0.3</SocialImpact>
 					<SexFrequency>-0.1</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 					<ComfyTemperatureMin>2</ComfyTemperatureMin>
 				</statOffsets>
 			</li>
@@ -87,7 +83,6 @@
 					<Vulnerability>-0.2</Vulnerability>
 					<SocialImpact>-0.6</SocialImpact>
 					<SexFrequency>-0.15</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 					<ComfyTemperatureMin>4</ComfyTemperatureMin>
 				</statOffsets>
 				<painOffset>-0.05</painOffset>
@@ -100,7 +95,6 @@
 					prefer victims not being completely drenched-->
 					<SocialImpact>-0.7</SocialImpact>
 					<SexFrequency>-0.4</SexFrequency>
-					<SexAbility>-0.1</SexAbility>
 					<ComfyTemperatureMin>7</ComfyTemperatureMin>
 				</statOffsets>
 				<painOffset>-0.1</painOffset>
@@ -136,7 +130,6 @@
 				<statOffsets>
 					<SocialImpact>0.1</SocialImpact>
 					<SexFrequency>0.1</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 					<ComfyTemperatureMax>2</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -146,7 +139,6 @@
 				<statOffsets>
 					<SocialImpact>0.2</SocialImpact>
 					<SexFrequency>0.2</SexFrequency>
-					<SexAbility>0.2</SexAbility>
 					<ComfyTemperatureMax>4</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -156,7 +148,6 @@
 				<statOffsets>
 					<SocialImpact>0.25</SocialImpact>
 					<SexFrequency>0.3</SexFrequency>
-					<SexAbility>0.3</SexAbility>
 					<ComfyTemperatureMax>6</ComfyTemperatureMax>
 				</statOffsets>
 				<capMods>
@@ -198,7 +189,6 @@
 					<Vulnerability>0.1</Vulnerability>
 					<SocialImpact>-0.1</SocialImpact>
 					<SexFrequency>-0.1</SexFrequency>
-					<SexAbility>0.1</SexAbility>
 				</statOffsets>
 			</li>
 			<li>
@@ -208,7 +198,6 @@
 					<Vulnerability>0.2</Vulnerability>
 					<SocialImpact>-0.2</SocialImpact>
 					<SexFrequency>-0.2</SexFrequency>
-					<SexAbility>0.2</SexAbility>
 				</statOffsets>
 			</li>
 			<li>
@@ -218,7 +207,6 @@
 					<Vulnerability>-0.2</Vulnerability>
 					<SocialImpact>-0.3</SocialImpact>
 					<SexFrequency>-0.3</SexFrequency>
-					<SexAbility>-0.1</SexAbility>
 				</statOffsets>
 			</li>
 		</stages>

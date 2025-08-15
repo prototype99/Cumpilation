@@ -35,7 +35,6 @@ have the tag `canCumflate` -->
         <statOffsets>
           <Vulnerability>0.1</Vulnerability>
           <SexFrequency>-0.1</SexFrequency>
-          <SexAbility>0.1</SexAbility>
         </statOffsets>
         <capMods>
           <li>
@@ -50,7 +49,6 @@ have the tag `canCumflate` -->
         <statOffsets>
           <Vulnerability>0.3</Vulnerability>
           <SexFrequency>-0.3</SexFrequency>
-          <SexAbility>0.1</SexAbility>
         </statOffsets>
         <capMods>
           <li>
@@ -66,7 +64,6 @@ have the tag `canCumflate` -->
         <statOffsets>
           <Vulnerability>0.5</Vulnerability>
           <SexFrequency>-0.5</SexFrequency>
-          <SexAbility>-0.1</SexAbility>
         </statOffsets>
         <capMods>
           <li>
@@ -82,7 +79,6 @@ have the tag `canCumflate` -->
         <statOffsets>
           <Vulnerability>0.7</Vulnerability>
           <SexFrequency>-0.7</SexFrequency>
-          <SexAbility>-0.5</SexAbility>
         </statOffsets>
         <capMods>
           <li>

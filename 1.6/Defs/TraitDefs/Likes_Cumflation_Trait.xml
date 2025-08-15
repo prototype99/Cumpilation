@@ -11,7 +11,6 @@
         <statOffsets>
           <SexFrequency>0.5</SexFrequency>
           <SexSatisfaction>0.2</SexSatisfaction>
-          <SexAbility>.2</SexAbility>
         </statOffsets>
         <allowedMeditationFocusTypes>
           <li>Sex</li>
