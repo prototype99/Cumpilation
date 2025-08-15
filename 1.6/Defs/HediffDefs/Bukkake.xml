@@ -24,6 +24,7 @@
 				<statOffsets>
 					<Vulnerability>0.2</Vulnerability>
 					<SocialImpact>-0.1</SocialImpact>
+					<SexFrequency>-0.1</SexFrequency>
 				</statOffsets>
 			</li>
 			<li>
@@ -32,6 +33,7 @@
 				<statOffsets>
 					<Vulnerability>0.3</Vulnerability>
 					<SocialImpact>-0.3</SocialImpact>
+					<SexFrequency>-0.15</SexFrequency>
 					<ComfyTemperatureMax>1</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -42,6 +44,7 @@
 					<Vulnerability>-0.1</Vulnerability><!--pawns
 					prefer victims not being completely drenched-->
 					<SocialImpact>-0.5</SocialImpact>
+					<SexFrequency>-0.2</SexFrequency>
 					<ComfyTemperatureMax>3</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -69,6 +72,7 @@
 				<statOffsets>
 					<Vulnerability>-0.1</Vulnerability>
 					<SocialImpact>-0.3</SocialImpact>
+					<SexFrequency>-0.1</SexFrequency>
 					<ComfyTemperatureMin>2</ComfyTemperatureMin>
 				</statOffsets>
 			</li>
@@ -78,6 +82,7 @@
 				<statOffsets>
 					<Vulnerability>-0.2</Vulnerability>
 					<SocialImpact>-0.6</SocialImpact>
+					<SexFrequency>-0.15</SexFrequency>
 					<ComfyTemperatureMin>4</ComfyTemperatureMin>
 				</statOffsets>
 				<painOffset>-0.05</painOffset>
@@ -89,6 +94,7 @@
 					<Vulnerability>-0.3</Vulnerability><!--pawns
 					prefer victims not being completely drenched-->
 					<SocialImpact>-0.7</SocialImpact>
+					<SexFrequency>-0.4</SexFrequency>
 					<ComfyTemperatureMin>7</ComfyTemperatureMin>
 				</statOffsets>
 				<painOffset>-0.1</painOffset>
@@ -123,6 +129,7 @@
 				<label>moisturized</label>
 				<statOffsets>
 					<SocialImpact>0.1</SocialImpact>
+					<SexFrequency>0.1</SexFrequency>
 					<ComfyTemperatureMax>2</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -131,6 +138,7 @@
 				<label>drenched</label>
 				<statOffsets>
 					<SocialImpact>0.2</SocialImpact>
+					<SexFrequency>0.2</SexFrequency>
 					<ComfyTemperatureMax>4</ComfyTemperatureMax>
 				</statOffsets>
 			</li>
@@ -139,6 +147,7 @@
 				<label>soaked</label>
 				<statOffsets>
 					<SocialImpact>0.25</SocialImpact>
+					<SexFrequency>0.3</SexFrequency>
 					<ComfyTemperatureMax>6</ComfyTemperatureMax>
 				</statOffsets>
 				<capMods>
@@ -176,14 +185,29 @@
 			<li>
 				<minSeverity>0.25</minSeverity>
 				<label>some</label>
+				<statOffsets>
+					<Vulnerability>0.1</Vulnerability>
+					<SocialImpact>-0.1</SocialImpact>
+					<SexFrequency>-0.1</SexFrequency>
+				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.5</minSeverity>
 				<label>dripping</label>
+				<statOffsets>
+					<Vulnerability>0.2</Vulnerability>
+					<SocialImpact>-0.2</SocialImpact>
+					<SexFrequency>-0.2</SexFrequency>
+				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.8</minSeverity>
 				<label>drenched</label>
+				<statOffsets>
+					<Vulnerability>-0.2</Vulnerability>
+					<SocialImpact>-0.3</SocialImpact>
+					<SexFrequency>-0.3</SexFrequency>
+				</statOffsets>
 			</li>
 		</stages>
 		<comps>

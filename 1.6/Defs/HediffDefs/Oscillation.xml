@@ -45,6 +45,7 @@
                 <becomeVisible>true</becomeVisible>
                 <statFactors>
                     <SexFrequency>1.1</SexFrequency>
+                  <SexSatisfaction>1</SexSatisfaction>
                 </statFactors>
             </li>
             <li>
@@ -53,6 +54,7 @@
                 <becomeVisible>true</becomeVisible>
                 <statFactors>
                     <SexFrequency>1.3</SexFrequency>
+                  <SexSatisfaction>1.5</SexSatisfaction>
                 </statFactors>
             </li>
             <li>
@@ -61,6 +63,7 @@
                 <becomeVisible>true</becomeVisible>
                 <statFactors>
                     <SexFrequency>1.7</SexFrequency>
+                  <SexSatisfaction>2.5</SexSatisfaction>
                 </statFactors>
             </li>
         </stages>
@@ -198,6 +201,7 @@
                 <becomeVisible>true</becomeVisible>
                 <statFactors>
                     <SexFrequency>1.1</SexFrequency>
+                    <SexSatisfaction>1.1</SexSatisfaction>
                 </statFactors>
             </li>
             <li>
@@ -206,6 +210,7 @@
                 <becomeVisible>true</becomeVisible>
                 <statFactors>
                     <SexFrequency>1.25</SexFrequency>
+                  <SexSatisfaction>1.25</SexSatisfaction>
                 </statFactors>
             </li>
             <li>
@@ -214,6 +219,7 @@
                 <becomeVisible>true</becomeVisible>
                 <statFactors>
                     <SexFrequency>1.5</SexFrequency>
+                  <SexSatisfaction>1.5</SexSatisfaction>
                 </statFactors>
             </li>
         </stages>
