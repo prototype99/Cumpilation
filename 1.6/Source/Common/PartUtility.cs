@@ -37,7 +37,7 @@ namespace Cumpilation.Common
 
                 if (part is ISexPartHediff sexPart)
                 {
-                    if (sexPart.GetPartComp().Fluid == null && needsFluid) { continue; }
+                    if (sexPart.GetComp<HediffComp_SexPart>().Fluid == null && needsFluid) { continue; }
 
                     if (targetPenis && Genital_Helper.is_penis(part))
                     {
@@ -96,9 +96,9 @@ namespace Cumpilation.Common
         {
             if (pawn == null) return false;
 
-            if (pawn.IsAnimal() && !allowAnimals) return false;
+            if (xxx.is_animal(pawn) && !allowAnimals) return false;
 
-            if (!pawn.IsAnimal() && (onlyAdults && !pawn.ageTracker.Adult))
+            if (!xxx.is_animal(pawn) && (onlyAdults && !pawn.ageTracker.Adult))
                 return false;
 
             if (Genital_Helper.is_futa(pawn) && !allowFutas) { return false; }

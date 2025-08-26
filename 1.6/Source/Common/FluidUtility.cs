@@ -15,8 +15,8 @@ namespace Cumpilation.Common
 
         public static void ChangeFluidType(ISexPartHediff part, SexFluidDef newFluid)
         {
-            var comp = part.GetPartComp();
-            ModLog.Debug($"Changing {part}s fluid for {part.GetOwner()} from {comp.Fluid} to {newFluid}");
+            var comp = part.GetComp<HediffComp_SexPart>();
+            ModLog.Debug($"Changing {part}s fluid for {comp.Pawn.Name} from {comp.Fluid} to {newFluid}");
             comp.Fluid = newFluid;
         }
 
@@ -28,7 +28,7 @@ namespace Cumpilation.Common
                 var def = GetHediffDefSexPart(part);
                 ISexPartHediff partCasted = (ISexPartHediff)part;
                 if (def == null) continue;
-                if (partCasted.GetPartComp().Fluid == null) continue;
+                if (partCasted.GetComp<HediffComp_SexPart>().Fluid == null) continue;
                 if (filterForShootsOnOrgasm && !def.produceFluidOnOrgasm) continue;
                 //ModLog.Debug($"Found Genital {part} for {pawn} with Fluid {partCasted.GetPartComp().Fluid}");
                 results.Add(partCasted);

@@ -53,12 +53,12 @@ namespace Cumpilation.Gathering
             foreach (Hediff genital in relevantGenitals)
             {
                 ISexPartHediff sexPartHediff = (ISexPartHediff)genital;
-                var fluid = sexPartHediff.GetPartComp().Fluid;
+                var fluid = sexPartHediff.GetComp<HediffComp_SexPart>().Fluid;
 
                 if (ext.supportedFluids.Contains(fluid))
                 {
                     FluidGatheringDef fgDef = LookupFluidGatheringDef(fluid);
-                    float fluidAmount = sexPartHediff.GetPartComp().FluidAmount;
+                    float fluidAmount = sexPartHediff.GetComp<HediffComp_SexPart>().FluidAmount;
                     if (numberOfOtherBuildings > 0)
                     {
                         fluidAmount = fluidAmount / numberOfOtherBuildings + 1;
@@ -262,7 +262,7 @@ namespace Cumpilation.Gathering
             return def.supportedFluids.Contains(fluid);
         }
 
-        public static bool HasAnySupportedFluidGatheringDefs(ISexPartHediff part) => HasAnySupportedFluidGatheringDefs(part.GetPartComp().Fluid);
+        public static bool HasAnySupportedFluidGatheringDefs(ISexPartHediff part) => HasAnySupportedFluidGatheringDefs(part.GetComp<HediffComp_SexPart>().Fluid);
         public static bool HasAnySupportedFluidGatheringDefs(SexFluidDef fluidDef) => LookupFluidGatheringDef(fluidDef) != null;
 
         public static Building FindClosestFluidSink(Pawn pawn, SexFluidDef fluid)

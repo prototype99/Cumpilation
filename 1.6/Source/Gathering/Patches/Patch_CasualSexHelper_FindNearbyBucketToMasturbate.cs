@@ -40,13 +40,13 @@ namespace Cumpilation.Gathering
                 .Where(part => part is ISexPartHediff)
                 .Cast<ISexPartHediff>()
                 .Where(part => GatheringUtility.HasAnySupportedFluidGatheringDefs(part))
-                .OrderByDescending(f => f.GetPartComp().FluidAmount)
+                .OrderByDescending(f => f.GetComp<HediffComp_SexPart>().FluidAmount)
                 .FirstOrFallback();
 
             if (genitalWithMostFluid == null)
                 return true;
 
-            Building fluidSink = GatheringUtility.FindClosestFluidSink(pawn, genitalWithMostFluid.GetPartComp().Fluid);
+            Building fluidSink = GatheringUtility.FindClosestFluidSink(pawn, genitalWithMostFluid.GetComp<HediffComp_SexPart>().Fluid);
 
             if (fluidSink == null)
             {

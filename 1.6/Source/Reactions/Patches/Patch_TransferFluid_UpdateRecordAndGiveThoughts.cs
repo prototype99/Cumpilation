@@ -16,7 +16,7 @@ namespace Cumpilation.Reactions
     public static class Patch_TransferFluid_UpdateRecordAndGiveThoughts
     {
         public static void Postfix(SexProps props) {
-            if (props == null || props.pawn == null || props.partner == null || props.partner.IsAnimal() || props.partner.IsColonyMech) return;
+            if (props == null || props.pawn == null || props.partner == null || xxx.is_animal(props.partner) || props.partner.IsColonyMech) return;
             Pawn pawn = props.pawn;
             Pawn partner = props.partner;
 
@@ -41,11 +41,11 @@ namespace Cumpilation.Reactions
 
             ModLog.Debug($"{partner} is receiver, {pawn} is source --- continuing to check {parts.Count()} of their parts");
             foreach (var part in parts) {
-                var recordMapping = ReactionUtility.LookupFluid(part.GetPartComp().Fluid);
+                var recordMapping = ReactionUtility.LookupFluid(part.GetComp<HediffComp_SexPart>().Fluid);
                 if (recordMapping == null) continue;
                 partner.records.Increment(recordMapping.numConsumedRecord);
-                partner.records.AddTo(recordMapping.amountConsumedRecord, part.GetPartComp().FluidAmount);
-                ModLog.Debug($"Bumping {partner}s records for {part.GetPartComp().Fluid} by {part.GetPartComp().FluidAmount}. New:#{partner.records.GetValue(recordMapping.numConsumedRecord)} dinings ({partner.records.GetValue(recordMapping.amountConsumedRecord)} ml total)");
+                partner.records.AddTo(recordMapping.amountConsumedRecord, part.GetComp<HediffComp_SexPart>().FluidAmount);
+                ModLog.Debug($"Bumping {partner}s records for {part.GetComp<HediffComp_SexPart>().Fluid} by {part.GetComp<HediffComp_SexPart>().FluidAmount}. New:#{partner.records.GetValue(recordMapping.numConsumedRecord)} dinings ({partner.records.GetValue(recordMapping.amountConsumedRecord)} ml total)");
                 
                 if (Settings.EnableProgressingConsumptionThoughts)
                 {

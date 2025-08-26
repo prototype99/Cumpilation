@@ -35,10 +35,10 @@ namespace Cumpilation.Common
                     // Adjust back to before this Comp
                     if ( (lastMultiplier != float.MinValue) && lastMultiplier > 0) 
                     {
-                        sexPart.GetPartComp().partFluidMultiplier /= lastMultiplier;
+                        sexPart.GetComp<HediffComp_SexPart>().partFluidMultiplier /= lastMultiplier;
                     }
                     // Re-Adjust based on the new change by this Hediff
-                    sexPart.GetPartComp().partFluidMultiplier *= CalculateOutput();
+                    sexPart.GetComp<HediffComp_SexPart>().partFluidMultiplier *= CalculateOutput();
                     lastMultiplier = CalculateOutput();
                 }
             }
@@ -52,7 +52,7 @@ namespace Cumpilation.Common
             if (Pawn != null && !Pawn.Dead && lastMultiplier != float.MinValue && lastMultiplier > 0.0) { 
                 foreach(ISexPartHediff sexPart in Props.GetSexPartHediffs(Pawn))
                 {
-                    sexPart.GetPartComp().partFluidMultiplier /= lastMultiplier;
+                    sexPart.GetComp<HediffComp_SexPart>().partFluidMultiplier /= lastMultiplier;
                 }
             }
         }

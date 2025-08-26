@@ -41,7 +41,7 @@ namespace Cumpilation.Bukkake
             foreach (ISexPartHediff shootingGenital in giverGenitals)
             {
 
-                var sexPartComp = shootingGenital.GetPartComp();
+                var sexPartComp = shootingGenital.GetComp<HediffComp_SexPart>();
 
                 var splashDef = LookupCoverageHediff(sexPartComp.Fluid);
                 if (splashDef == null)
@@ -110,14 +110,14 @@ namespace Cumpilation.Bukkake
         public static bool CanBeCovered(Pawn pawn)
         {
             if (pawn == null) return false;
-            if (pawn.IsAnimal()) return false;
+            if (xxx.is_animal(pawn)) return false;
             if (!pawn.Spawned) return false;
 
             return true;
         }
 
         public static HediffDef LookupCoverageHediff(Hediff sexPart) => sexPart is ISexPartHediff ? LookupCoverageHediff((ISexPartHediff)sexPart) : null;
-        public static HediffDef LookupCoverageHediff(ISexPartHediff sexPart) => sexPart.GetPartComp().Fluid != null ? LookupCoverageHediff(sexPart.GetPartComp().Fluid) : null; 
+        public static HediffDef LookupCoverageHediff(ISexPartHediff sexPart) => sexPart.GetComp<HediffComp_SexPart>().Fluid != null ? LookupCoverageHediff(sexPart.GetComp<HediffComp_SexPart>().Fluid) : null; 
         public static HediffDef LookupCoverageHediff(SexFluidDef fluid) {
             if (fluid == null) return null;
 

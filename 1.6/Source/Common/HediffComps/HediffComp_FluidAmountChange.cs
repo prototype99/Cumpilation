@@ -33,7 +33,7 @@ namespace Cumpilation.Common
         {
             // DevNote: Due to the logic before, I assume all of these Casts are save and have values;
             ISexPartHediff sexPart = (ISexPartHediff)part;
-            var comp = sexPart.GetPartComp();
+            var comp = sexPart.GetComp<HediffComp_SexPart>();
             storedHediffs.Add(part);
             comp.partFluidMultiplier *= Props.multiplier;
         }
@@ -47,7 +47,7 @@ namespace Cumpilation.Common
                 Hediff part = storedHediffs[i];
                 if (part is ISexPartHediff sexPart)
                 {
-                    sexPart.GetPartComp().partFluidMultiplier *= 1/ Props.multiplier;
+                    sexPart.GetComp<HediffComp_SexPart>().partFluidMultiplier *= 1/ Props.multiplier;
                 }
             }
         }

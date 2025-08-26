@@ -25,9 +25,9 @@ namespace Cumpilation.Fluids
 
             var parts = Genital_Helper.get_AllPartsHediffList(occupant);
             foreach (var part in parts) { 
-                if (part is ISexPartHediff sexPart && sexPart.GetPartComp().Fluid != null)
+                if (part is ISexPartHediff sexPart && sexPart.GetComp<HediffComp_SexPart>().Fluid != null)
                 {
-                    sexPart.GetPartComp().partFluidMultiplier *= Props.increaseFactor;
+                    sexPart.GetComp<HediffComp_SexPart>().partFluidMultiplier *= Props.increaseFactor;
                     occupant?.needs?.mood?.thoughts?.memories?.TryGainMemory(DefOfs.Cumpilation_Juiced_Up);
                 }
             }

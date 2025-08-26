@@ -23,10 +23,10 @@ namespace Cumpilation.Common
 
             foreach (ISexPartHediff sexPart in GetSexPartHediffs(pawn))
             {
-                if (sexPart.GetPartComp().Fluid == fluid)
+                if (sexPart.GetComp<HediffComp_SexPart>().Fluid == fluid)
                     continue;
                 
-                sexPart.GetPartComp().Fluid = fluid;
+                sexPart.GetComp<HediffComp_SexPart>().Fluid = fluid;
                 wasApplied = true;
             }
         }

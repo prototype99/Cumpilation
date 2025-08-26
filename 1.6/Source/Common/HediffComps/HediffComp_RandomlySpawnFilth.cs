@@ -31,10 +31,10 @@ namespace Cumpilation.Common
                 float chance = Props.chanceToSpawn * (Props.chanceBasedOnSeverity ? parent.Severity : 1.0f);
 
                 if (rand.NextDouble() < chance 
-                    && sexPart.GetPartComp().Fluid != null 
-                    && sexPart.GetPartComp().Fluid.filth != null)
+                    && sexPart.GetComp<HediffComp_SexPart>().Fluid != null 
+                    && sexPart.GetComp<HediffComp_SexPart>().Fluid.filth != null)
                 {
-                    FilthMaker.TryMakeFilth(parent.pawn.PositionHeld, parent.pawn.Map, sexPart.GetPartComp().Fluid.filth);
+                    FilthMaker.TryMakeFilth(parent.pawn.PositionHeld, parent.pawn.Map, sexPart.GetComp<HediffComp_SexPart>().Fluid.filth);
                 }
             }
         }

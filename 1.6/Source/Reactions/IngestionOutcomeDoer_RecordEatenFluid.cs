@@ -21,7 +21,7 @@ namespace Cumpilation.Reactions
 
         protected override void DoIngestionOutcomeSpecial(Pawn pawn, Thing ingested, int ingestedCount)
         {
-            if (pawn == null || pawn.IsAnimal()) return;
+            if (pawn == null || xxx.is_animal(pawn)) return;
             if (ingested == null || ingestedCount == 0) return;
             
             int amount = ingested.stackCount * (int)unitAmount;

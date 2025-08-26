@@ -44,8 +44,8 @@ namespace Cumpilation.Cumflation
 
             foreach(ISexPartHediff genital in inflatorGenitals)
             {
-                float necessaryAmount = FluidAmountRequiredToCumflatePawn(inflated, genital.GetPartComp().Fluid);
-                float resultingSeverity = DetermineCumflationSeverity(inflated, genital.GetPartComp().FluidAmount, genital.GetPartComp().Fluid);
+                float necessaryAmount = FluidAmountRequiredToCumflatePawn(inflated, genital.GetComp<HediffComp_SexPart>().Fluid);
+                float resultingSeverity = DetermineCumflationSeverity(inflated, genital.GetComp<HediffComp_SexPart>().FluidAmount, genital.GetComp<HediffComp_SexPart>().Fluid);
 
                 if (resultingSeverity > 0)
                 {
@@ -55,7 +55,7 @@ namespace Cumpilation.Cumflation
                     // Only give thoughts on more serious cumflations.
                     if (cumflationHediff.Severity >= 0.6)
                         GiveCumflationThoughts(inflated);
-                    FluidUtility.StoreFluidSource(cumflationHediff,inflator,genital.GetPartComp().Fluid,genital.GetPartComp().FluidAmount);
+                    FluidUtility.StoreFluidSource(cumflationHediff,inflator,genital.GetComp<HediffComp_SexPart>().Fluid,genital.GetComp<HediffComp_SexPart>().FluidAmount);
 
                     if (cumflationHediff.Severity > 1.01)
                         TryQueueOverflowingCumflation(inflated);
@@ -124,11 +124,11 @@ namespace Cumpilation.Cumflation
         public static bool CanBeCumflated(Pawn pawn)
         {
             if (pawn == null) return false;
-            if (pawn.IsAnimal()) return false;
+            if (xxx.is_animal(pawn)) return false;
             return true;
         }
 
-        public static bool CanCumflate(ISexPartHediff part) => CanCumflate(part.GetPartComp().Fluid);
+        public static bool CanCumflate(ISexPartHediff part) => CanCumflate(part.GetComp<HediffComp_SexPart>().Fluid);
 
         public static bool CanCumflate(SexFluidDef def)
         {

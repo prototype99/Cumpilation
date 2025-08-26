@@ -23,7 +23,7 @@ namespace Cumpilation.Reactions.Patches
     {
         public static void Postfix(Pawn ingester, ThingComp __instance)
         {
-            if (ingester == null || ingester.IsAnimal()) return;
+            if (ingester == null || xxx.is_animal(ingester)) return;
             if (__instance == null) return;
 
             if (__instance is CompIngredients meal && meal.ingredients != null && meal.ingredients.Count > 0)

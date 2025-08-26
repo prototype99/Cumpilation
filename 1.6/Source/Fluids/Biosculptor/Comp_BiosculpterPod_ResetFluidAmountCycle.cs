@@ -22,11 +22,11 @@ namespace Cumpilation.Fluids
             var parts = Genital_Helper.get_AllPartsHediffList(occupant);
             foreach (var part in parts)
             {
-                if (part is ISexPartHediff sexPart && sexPart.GetPartComp().Fluid != null)
+                if (part is ISexPartHediff sexPart && sexPart.GetComp<HediffComp_SexPart>().Fluid != null)
                 {
-                    sexPart.GetPartComp().Fluid = sexPart.GetPartComp().Def.fluid;
-                    if (sexPart.GetPartComp().Fluid != null)
-                        sexPart.GetPartComp().partFluidMultiplier = sexPart.GetPartComp().Def.fluidMultiplier;
+                    sexPart.GetComp<HediffComp_SexPart>().Fluid = sexPart.GetComp<HediffComp_SexPart>().Def.fluid;
+                    if (sexPart.GetComp<HediffComp_SexPart>().Fluid != null)
+                        sexPart.GetComp<HediffComp_SexPart>().partFluidMultiplier = sexPart.GetComp<HediffComp_SexPart>().Def.fluidMultiplier;
                 }
             }
         }

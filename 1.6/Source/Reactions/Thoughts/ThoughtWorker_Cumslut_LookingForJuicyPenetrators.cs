@@ -60,14 +60,14 @@ namespace Cumpilation.Reactions
             var relevant_parts = Genital_Helper.get_AllPartsHediffList(other)
                 .Where(x => x is ISexPartHediff)
                 .Cast<ISexPartHediff>()
-                .Where(sP => sP.GetPartComp().Fluid != null)
-                .Where(sP => sP.GetPartComp().Def.genitalTags.Contains(GenitalTag.CanPenetrate) || sP.GetPartComp().Fluid.tags.Contains("CanCumflate"))
-                .OrderByDescending(sP => sP.GetPartComp().FluidAmount)
+                .Where(sP => sP.GetComp<HediffComp_SexPart>().Fluid != null)
+                .Where(sP => sP.GetComp<HediffComp_SexPart>().Def.genitalTags.Contains(GenitalTag.CanPenetrate) || sP.GetComp<HediffComp_SexPart>().Fluid.tags.Contains("CanCumflate"))
+                .OrderByDescending(sP => sP.GetComp<HediffComp_SexPart>().FluidAmount)
                 .ToList();
 
             foreach (ISexPartHediff part in relevant_parts)
             {
-                var comp = part.GetPartComp();
+                var comp = part.GetComp<HediffComp_SexPart>();
 
                 if (comp.FluidAmount >= LIKE_STRONGLY_THRESHOLD)
                 {
