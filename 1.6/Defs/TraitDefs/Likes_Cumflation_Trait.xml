@@ -10,6 +10,7 @@
         <description>[PAWN_nameDef] likes the sensation of filling and being filled with large quantities of cum or other fluids.</description>
         <statOffsets>
           <SexFrequency>0.5</SexFrequency>
+          <SexSatisfaction>0.2</SexSatisfaction>
         </statOffsets>
         <allowedMeditationFocusTypes>
           <li>Sex</li>

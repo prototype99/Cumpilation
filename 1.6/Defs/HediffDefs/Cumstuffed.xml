@@ -38,6 +38,7 @@
         <hungerRateFactor>0.95</hungerRateFactor>
         <statOffsets>
           <Vulnerability>0.05</Vulnerability>
+          <SexFrequency>-0.05</SexFrequency>
         </statOffsets>
         <capMods>
           <li>
@@ -52,6 +53,7 @@
         <hungerRateFactor>0.9</hungerRateFactor>
         <statOffsets>
           <Vulnerability>0.1</Vulnerability>
+          <SexFrequency>-0.15</SexFrequency>
         </statOffsets>
         <capMods>
           <li>
@@ -66,6 +68,7 @@
         <hungerRateFactor>0.75</hungerRateFactor>
         <statOffsets>
           <Vulnerability>0.15</Vulnerability>
+          <SexFrequency>-0.25</SexFrequency>
         </statOffsets>
         <capMods>
           <li>
@@ -81,6 +84,7 @@
         <hungerRateFactor>0.5</hungerRateFactor>
         <statOffsets>
           <Vulnerability>0.2</Vulnerability>
+          <SexFrequency>-0.35</SexFrequency>
         </statOffsets>
         <capMods>
           <li>
@@ -125,6 +129,7 @@
           <GlobalLearningFactor>-0.1</GlobalLearningFactor>
           <MentalBreakThreshold>-0.1</MentalBreakThreshold>
           <WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+          <SexFrequency>-0.35</SexFrequency>
         </statOffsets>
         <capMods>
           <li>
@@ -144,6 +149,7 @@
           <GlobalLearningFactor>-0.2</GlobalLearningFactor>
           <MentalBreakThreshold>-0.2</MentalBreakThreshold>
           <WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+          <SexFrequency>-0.45</SexFrequency>
         </statOffsets>
         <capMods>
           <li>
